@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -b 1 >> file.txt | cat
+cut -b 1 texto | tr -d '\n'
