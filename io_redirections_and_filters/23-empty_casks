@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -empty -mindepth 1
+find . -empty -mindepth 1
