@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
 #Loop using if
-i=0
-
-while [ $i -lt 10 ];do
-      if [ $i -ne 3 -a $i -ne 7 ]; then
-      echo 'Best School';
-      
-      elif [ $i -eq 3 ]; then
-    echo 'bad luck'
-      else
-	  echo 'good luck'
-	  fi
-      i=$((i+1));
-done
-      
+i=1
+while [ "$i" -le 10 ]
+do
+    if [ "$i" -eq 4 ]; then
+	echo "bad luck"
+    elif [ "$i" -eq 8 ]; then
+	echo "good luck"
+    else
+	echo "Best School"
+    fi
+    (( i++ ))
+    done
