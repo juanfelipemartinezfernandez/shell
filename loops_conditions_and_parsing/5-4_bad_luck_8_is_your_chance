@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#Loop using if
+i=0
+
+while [ $i lt 10 ];do
+      if [ $i ! 4 -a $i ! 8 ]; then
+      echo 'Best School';
+      fi
+      done
+      
