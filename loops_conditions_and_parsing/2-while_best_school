@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 #Loop using While
-$contador=0
-while contador <10
+contador=0
+while ((contador < 10));
 do
 echo 'Best School';
-$contador +=1;
+((contador +=1));
 done
+
