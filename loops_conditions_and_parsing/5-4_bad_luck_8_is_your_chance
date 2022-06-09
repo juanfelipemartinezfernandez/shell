@@ -2,9 +2,15 @@
 #Loop using if
 i=0
 
-while [ $i lt 10 ];do
-      if [ $i ! 4 -a $i ! 8 ]; then
+while [ $i -lt 10 ];do
+      if [ $i -ne 3 -a $i -ne 7 ]; then
       echo 'Best School';
-      fi
-      done
+      
+      elif [ $i -eq 3 ]; then
+    echo 'bad luck'
+      else
+	  echo 'good luck'
+	  fi
+      i=$((i+1));
+done
       
