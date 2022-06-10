@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#Script for checking on a file using If statement
+
+file=$1
+
+if [ -e $file ];then
+   echo school file exists
+   if [ -s $file ];then
+      echo school file is empty
+   else
+	echo school file is not empty
+	fi
+	if  [ -f $file ];then
+	    echo school is a regular file
+	    fi
+	    fi
