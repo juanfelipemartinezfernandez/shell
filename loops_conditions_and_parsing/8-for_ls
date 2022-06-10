@@ -3,6 +3,6 @@
 archivo=$(ls | cut -d "-" -f2)
 for _ in archivo
 do
-	echo "$archivo"
+	echo _
 	done
 	
