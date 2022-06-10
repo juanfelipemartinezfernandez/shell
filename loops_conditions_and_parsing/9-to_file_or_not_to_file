@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Script for checking on a file using If statement
 
-file=$1
+file=school
 
 if [ -e $file ];then
    echo school file exists
