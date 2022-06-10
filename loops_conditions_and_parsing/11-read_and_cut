@@ -6,7 +6,7 @@ i=1
 while ((cont > 0));do
 
     
-    out=$( /etc/passwd > head -n $i | cut -d ":" -f1,3,6 )
+    out=$(less /etc/passwd | head -n $i | cut -d ":" -f1,3,6 )
     echo "$out"
     ((i=i+1))
     ((cont=cont-1))
