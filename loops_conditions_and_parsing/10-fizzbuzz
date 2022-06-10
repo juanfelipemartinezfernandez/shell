@@ -3,15 +3,15 @@
 
 n=1
 
-while (( $n <= 100 )); do
+while (( n <= 100 )); do
     
-    if ((( $n % 3) == "0")) && ((( $n % 5) == "0")) ;then
+    if ((( n % 3) == "0")) && ((( $n % 5) == "0")) ;then
 	echo FizzBuzz
 	((n=n+1))
-	elif ((( $n % 5)== "0"));then
+	elif ((( n % 5)== "0"));then
 	    echo Buzz
 	    ((n=n+1))
-	    elif ((( $n % 3)== "0"));then
+	    elif ((( n % 3)== "0"));then
 		echo Fizz
 		((n=n+1))
 	    
