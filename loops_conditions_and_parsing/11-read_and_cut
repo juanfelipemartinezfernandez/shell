@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 #Script for printing files
 
-cont=($ wc -l /etc/passwd)
+cont=$( wc -l /etc/passwd | cut -d " " -f1)
+i=1
+while ((cont > 0));do
 
-echo $cont
+    
+    out=$(cat /etc/passwd | head -n $i | cut -d ":" -f1,3,6 )
+    echo $out
+    ((i=i+1))
+    ((cont=cont-1))
+done
