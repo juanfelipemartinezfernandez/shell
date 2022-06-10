@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Script for listing names using For loop
 archivo=$(ls)
-for item in archivo
+for item in "$archivo"
 do
 	echo "$item" | cut -d "-" -f2
 	done
