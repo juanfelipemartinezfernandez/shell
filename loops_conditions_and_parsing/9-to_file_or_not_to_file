@@ -6,9 +6,9 @@ file=$1
 if [ -e $file ];then
    echo school file exists
    if [ -s $file ];then
-      echo school file is empty
+      echo school file is not empty
    else
-	echo school file is not empty
+	echo school file empty
 	fi
 	if  [ -f $file ];then
 	    echo school is a regular file
