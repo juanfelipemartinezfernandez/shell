@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Script for printing files
+
+cont=($ wc -l /etc/passwd)
+
+echo $cont
