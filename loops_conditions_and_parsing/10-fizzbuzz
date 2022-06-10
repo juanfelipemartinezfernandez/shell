@@ -7,7 +7,7 @@ while (( $n <= 100 )); do
     echo $n
     if ((( $n % 3) == "0")) && ((( $n % 5) != "0")) ;then
 	echo Fizz
-	n=($n+1)
+	((n=n+1))
     else
 	
 	((n=n+1))
