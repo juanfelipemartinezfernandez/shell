@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#Loop numbers to 100 with diff result multiples 3 and 5
+
+n=1
+
+while (( $n <= 100 )); do
+    if ((( $n % 3 ) == 0 -a ( $n % 5) != 0));then
+	echo Fizz
+    else
+	echo $n
+    
+    done

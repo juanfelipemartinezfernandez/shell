@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Loop numbers to 100 with diff result multiples 3 and 5
+
+n=1
+
+while
