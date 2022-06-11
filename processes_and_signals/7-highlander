@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #stop a signal from killing a process
 
-trap -- "I am invincible!!" 15
+trap  'echo "I am invincible!!"' 15
 
