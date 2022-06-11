@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# sorting by lines containing "bash"
+ps auxf | grep "bash"
