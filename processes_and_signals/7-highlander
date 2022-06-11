@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #stop a signal from killing a process
 
-trap  'echo "I am invincible!!"' 15
-
-while true;do
-
-
-    echo To inifnity and beyond
+#trap "msg" 15
+c=1
+while ((c!=0))
+do
+    echo "To infinity and beyond"
     sleep 2
+
     done
