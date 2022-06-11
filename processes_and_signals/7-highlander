@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-#
+#stop a signal from killing a process
+
+trap "" 15
