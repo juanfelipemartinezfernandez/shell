@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #stop a signal from killing a process
 
-#trap "msg" 15
+trap 'print "I am invincible!!!"' TERM
 c=1
 while ((c!=0))
 do
