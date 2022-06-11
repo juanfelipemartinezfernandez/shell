@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#num occurences of each IP with its respective http status code
+
+file="apache-access.log"
+
+awk '{print $1 $9}' | sort | uniq -c | sort -r
