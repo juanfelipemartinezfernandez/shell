@@ -2,3 +2,4 @@
 #stop a signal from killing a process
 
 trap "" 15
+echo I am invincible!!
