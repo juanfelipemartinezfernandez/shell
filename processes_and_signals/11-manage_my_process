@@ -3,7 +3,7 @@
 
 argument="$1"
 
-if [ "$argument" == "start"];then
+if [ "$argument" == "start" ];then
     ./manage_my_process
     echo "$!" > /var/run/my_process.pid
     echo "manage_my_process started"
