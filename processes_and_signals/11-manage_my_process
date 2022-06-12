@@ -10,7 +10,8 @@ if [[ "$argument" == "start" ]];then
 
 elif [[ "$argument" == "stop" ]];then
 
-    sudo kill -9 -"$(pgrep -f "manage_my_process;")"
+    sudo pkill -f "manage_my_process"
+    echo ""
     echo "manage_my_process stopped"
     rm -f /var/run/my_process.pid
 
