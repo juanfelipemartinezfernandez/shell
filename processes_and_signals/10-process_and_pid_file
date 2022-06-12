@@ -7,7 +7,7 @@ trap "echo 'I hate the kill command'; remover" SIGTERM
 trap "echo 'I hate the kill command'; remover" SIGQUIT
 
 
-echo $$ >> /var/run/holbertonscript.pid
+echo "$$" >> /var/run/myscript.pid
 while (true)
 do
     echo 'To infinity and beyond'
