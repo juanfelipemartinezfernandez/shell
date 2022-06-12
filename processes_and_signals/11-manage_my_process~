@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#script that will manage script manage_my_process
+
+argument="$1"
+
+if [ "$argument" == "start"];then
