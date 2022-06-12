@@ -11,7 +11,7 @@ if [[ "$argument" == "start" ]];then
 elif [[ "$argument" == "stop" ]];then
     echo "manage_my_process stopped"
     echo ""
-    sudo pkill -f "manage_my_process"
+    pkill -f "manage_my_process"
     echo ""
     rm -f /var/run/my_process.pid
 
