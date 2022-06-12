@@ -1,23 +1,23 @@
 #!/usr/bin/env bash
 #script that will manage script manage_my_process
 
-argument="$1"
+argument=$1
 
-if [ "$argument" == "start" ];then
-    ./manage_my_process
+if [[ "$argument" == "start" ]];then
+    ./manage_my_process &
     echo "$!" > /var/run/my_process.pid
     echo "manage_my_process started"
 
-elif [ "$argument" == "stop" ];then
+elif [[ "$argument" == "stop" ]];then
 
     pkill -f "manage_my_process"
     echo "manage_my_process stopped"
     rm -f /var/run/my_process.pid
 
-elif [ "$argument" == "restart" ];then
+elif [[ "$argument" == "restart" ]];then
     pkill -f "manage_my_process"
     rm -f /var/run/my_process.pid
-    ./manage_my_process
+    ./manage_my_process &
     echo "$!" > /var/run/my_process.pid
     echo "manage_my_process restarted"
 
