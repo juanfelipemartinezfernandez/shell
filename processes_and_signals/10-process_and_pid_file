@@ -3,8 +3,8 @@
 remover="$(rm -f /var/run/myscript.pid)"
 
 trap "echo 'Y U no love me?!'" SIGINT
-trap "echo 'I hate the kill command'; $remover" SIGTERM
-trap "echo 'I hate the kill command'; $remover" SIGQUIT
+trap "echo 'I hate the kill command'; "$remover"" SIGTERM
+trap "echo 'I hate the kill command'; "$remover"" SIGQUIT
 
 
 echo "$$" >> /var/run/myscript.pid
