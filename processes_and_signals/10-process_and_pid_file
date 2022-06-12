@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Infinite loop creates file with pid, catches signal, and removes file/exits:
-remover="$(rm -f /var/run/myscript.pid)"
+
 
 trap "echo 'Y U no love me?!'" SIGINT
-trap "echo 'I hate the kill command'; "$remover"" SIGTERM
-trap "echo 'I hate the kill command'; "$remover"" SIGQUIT
+trap "echo 'I hate the kill command';rm -f /var/run/myscript.pid" SIGTERM
+trap "echo 'I hate the kill command';rm -f /var/run/myscript.pid)" SIGQUIT
 
 
 echo "$$" >> /var/run/myscript.pid
