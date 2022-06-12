@@ -10,9 +10,9 @@ if [[ "$argument" == "start" ]];then
 
 elif [[ "$argument" == "stop" ]];then
     
-    echo "manage_my_process stopped"
+    echo "manage_my_process stopped "
     pkill -f "manage_my_process" && rm -f /var/run/my_process.pid
-    echo "manage_my_process stopped"
+    echo "manage_my_process stopped "
     
 
 elif [[ "$argument" == "restart" ]];then
